@@ -1,5 +1,7 @@
 package Util;
 
+import java.io.Serializable;
+
 /**
  * Abstract class to define the common properties of a Card object in Magic The Gathering.
  * name is the card name
@@ -12,7 +14,9 @@ package Util;
  * @author travis.john.thiel
  * 
  * */
-public abstract class Card {
+public abstract class Card implements Serializable{
+	
+	private static final long serialVersionUID = 2956022314622475819L;
 	private String name;
 	private String set;
 	private double price;
